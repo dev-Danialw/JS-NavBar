@@ -8,9 +8,12 @@ const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", () => {
-  if (links.classList.contains("show-links")) {
-    links.classList.remove("show-links");
-  } else {
-    links.classList.add("show-links");
-  }
+  // Toggling Manually
+  //   if (links.classList.contains("show-links")) {
+  //     links.classList.remove("show-links");
+  //   } else {
+  //     links.classList.add("show-links");
+  //   }
+  //   togglig the better way using toggle();
+  links.classList.toggle("show-links");
 });
